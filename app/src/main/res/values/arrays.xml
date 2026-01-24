@@ -1,0 +1,9 @@
+<resources>
+    <string-array name="heroes_array">
+        <item>@string/medusa</item>
+        <item>@string/tinker</item>
+        <item>@string/kez</item>
+        <item>@string/sand_king</item>
+        <item>@string/muerta</item>
+    </string-array>
+</resources>

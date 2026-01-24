@@ -1,35 +1,33 @@
 package com.example.firstappfaerbergnasida
 
 import android.os.Bundle
-import android.widget.Button
-import android.widget.TextView
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
+import com.example.firstappfaerbergnasida.databinding.ActivityMainBinding  // Автоматически сгенерированный класс
 
 class MainActivity : AppCompatActivity() {
+
+    private lateinit var binding: ActivityMainBinding
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
-        setContentView(R.layout.activity_main)
 
-        ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main)) { v, insets ->
+        binding = ActivityMainBinding.inflate(layoutInflater)
+        setContentView(binding.root)
+
+        ViewCompat.setOnApplyWindowInsetsListener(binding.main) { v, insets ->
             val systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars())
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
             insets
         }
 
-        // 1. Список героев
-        val heroes = listOf("Medusa", "Tinker", "Kez", "Sand King", "Muerta")
+        val heroes = resources.getStringArray(R.array.heroes_array)
 
-        // 2. Находим View по ID из XML
-        val heroText: TextView = findViewById(R.id.hero)
-        val actionButton: Button = findViewById(R.id.button)
-
-        // 3. Реакция на нажатие
-        actionButton.setOnClickListener {
-            heroText.text = heroes.random() // Выбирает случайный элемент
+        binding.button.setOnClickListener {
+            binding.hero.text = heroes.random()
         }
     }
 }

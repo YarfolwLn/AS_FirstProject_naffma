@@ -1,3 +1,14 @@
 <resources>
-    <string name="app_name">firstapp</string>
+    <string name="app_name">RandoHero</string>
+
+    <!-- Герои -->
+    <string name="medusa">Medusa</string>
+    <string name="tinker">Tinker</string>
+    <string name="kez">Kez</string>
+    <string name="sand_king">Sand King</string>
+    <string name="muerta">Muerta</string>
+
+    <string name="button_text">Выбрать случайного героя</string>
+
+    <string name="default_hero_text">Нажмите кнопку</string>
 </resources>
