@@ -5,7 +5,7 @@ import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
-import com.example.firstappfaerbergnasida.databinding.ActivityMainBinding  // Автоматически сгенерированный класс
+import com.example.firstappfaerbergnasida.databinding.ActivityMainBinding
 
 class MainActivity : AppCompatActivity() {
 
