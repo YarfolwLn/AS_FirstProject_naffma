@@ -12,12 +12,11 @@
         android:id="@+id/imageView"
         android:layout_width="261dp"
         android:layout_height="256dp"
-        android:src="@tools:sample/avatars"
+        android:src="@drawable/phantom_assasin"
         app:layout_constraintBottom_toTopOf="@+id/button"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/hero"
-        tools:src="@drawable/phantom_assasin" />
+        app:layout_constraintTop_toBottomOf="@+id/hero" />
 
     <TextView
         android:id="@+id/hero"
